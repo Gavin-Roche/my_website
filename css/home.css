@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(/images/hero_image.jpg);
+    /*Title: "THE SHANNON RIVER [AS IT PASSES THROUGH THE CITY OF LIMERICK]-140736" by William Murphy, © 2018.
+    Licensed under Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0).
+    Available at: https://creativecommons.org/licenses/by-sa/2.0/. Source: https://www.flickr.com/photos/infomatique/42430992742.*/
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222c37; /*#39495a;*/
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#headerText {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    margin: 5em 1em;
+    z-index: 2;
+}
+
+#headerText span {
+    color: #0070ff;
+}

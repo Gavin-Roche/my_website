@@ -1,0 +1,20 @@
+Icons
+
+linkedin
+<!--"Icon made by NajmunNahar from www.flaticon.com"/-->
+
+github
+<!--"Icon made by Laisa Islam Ani from www.flaticon.com"/-->
+
+email
+<!--"Icon made by Freepik from www.flaticon.com"/-->
+
+form
+<!--"Icon made by RIkas Dzihab from www.flaticon.com"/-->
+
+
+Hero Image
+
+/*Title: "THE SHANNON RIVER [AS IT PASSES THROUGH THE CITY OF LIMERICK]-140736" by William Murphy, © 2018.
+Licensed under Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0).
+Available at: https://creativecommons.org/licenses/by-sa/2.0/. Source: https://www.flickr.com/photos/infomatique/42430992742.*/
