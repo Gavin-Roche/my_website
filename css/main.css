@@ -1,8 +1,10 @@
+/* ----------General styles---------- */
+
 .nunito {
-  font-family: "Nunito", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
@@ -16,30 +18,47 @@ body {
     color: #FFFFFF;
 }
 
+a, .hamburgerMenu {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+} 
+
+/* ----------navbar styles---------- */
+
+:root {
+    --logo-size: 5em;
+    --mobile-logo-size: 3.5em;
+}
+
 nav {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     padding: 0em 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 .logo {
-    font-size: 5em;
+    font-size: var(--logo-size);
     padding: 0em;
     line-height: 1;
     text-decoration: none;
     color: #0070ff;
     font-weight: 600;
+    z-index: 2;
+}
+
+nav ul {
+    margin-left: auto;
+    display: flex;
+    gap: 4em;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0em 2em;
 }
 
 nav ul li a {
@@ -50,6 +69,12 @@ nav ul li a {
 nav ul li a:hover {
     color: #9a9a9a;
 }
+
+.toggle {
+    display: none;
+}
+
+/* ----------social media section styles---------- */
 
 footer img {
     height: 2em;
@@ -67,13 +92,122 @@ footer img {
     gap: 2em;
 }
 
-.Legal {
+/* ----------legal section styles---------- */
+
+.legal {
     background-color: #000000;
     text-align: center;
     padding: 1.5em;
 }
 
-.Legal a {
+.legal a {
     text-decoration: none;
     color: #0070ff;
+}
+
+/* ----------responsive section styles---------- */
+
+@media (max-width: 1000px) {
+    
+    .hamburgerMenu {
+        width: 30px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 2;
+        margin-left: auto;
+    }
+
+    .hamburgerMenu span {
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .hamburgerMenu.open span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburgerMenu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenu.open span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    } 
+
+    nav {
+        padding: 0em 1em;
+        background-color: #121212;
+    }
+
+    .logo{
+        font-size: var(--mobile-logo-size);
+    }
+
+    nav ul {
+        background-color: #121212cc;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        /* width: clamp(10em, 75%, 15em); */
+        width: 15em;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: calc(var(--mobile-logo-size) - 1em);
+        gap: 0em;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    nav ul.open {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .contactSocialMedia, .legal {
+        font-size: 0.9em;
+    }
+
+    .socialMediaIcons {
+        font-size: 1em;
+    }
+
+    h1.contactSocialMedia {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 325px)
+{
+    nav ul {
+        width: 100%;
+    }
+
+    .contactSocialMedia, .legal {
+        font-size: 0.7em;
+    }
+
+    h1.contactSocialMedia {
+        font-size: 1.2em;
+    }
 }
