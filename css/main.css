@@ -19,6 +19,7 @@ body {
 }
 
 a, .hamburgerMenu {
+    /* Ensures that there isn't a bule selector color on items when they are clicked */
     -webkit-tap-highlight-color: transparent;
     outline: none;
 } 
@@ -31,13 +32,20 @@ a, .hamburgerMenu {
 }
 
 nav {
-    position: relative;
+    /* Keeps the navBar at the top while being a reference for (nav ul) the options */
+    position: sticky;
+    /* Ensures this element above the headerText */
     z-index: 3;
+    /* Adds space the right and left of the navBar */
     padding: 0em 10%;
+    top: 0em;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    /* background-color: #000000; */
+    transition: background-color 0.3s ease;
+}
+
+nav.backgroundColor {
+    background-color: #121212;
 }
 
 .logo {
@@ -47,10 +55,12 @@ nav {
     text-decoration: none;
     color: #0070ff;
     font-weight: 600;
+    /* Ensures this element above the hero image filter */
     z-index: 2;
 }
 
 nav ul {
+    /* Pushes this element to the right */
     margin-left: auto;
     display: flex;
     gap: 4em;
@@ -70,8 +80,9 @@ nav ul li a:hover {
     color: #9a9a9a;
 }
 
-.toggle {
-    display: none;
+/* stops scroling when the mobile navBar is open */
+body.noScroll {overflow: hidden;
+    
 }
 
 /* ----------social media section styles---------- */
@@ -109,6 +120,7 @@ footer img {
 
 @media (max-width: 1000px) {
 
+    /* Creates a layout for the hamburgerMenu lines */
     .hamburgerMenu {
         width: 30px;
         height: 23px;
@@ -120,6 +132,7 @@ footer img {
         margin-left: auto;
     }
 
+    /* Styles the hamburgerMenu lines */
     .hamburgerMenu span {
         width: 100%;
         height: 3px;
@@ -128,6 +141,7 @@ footer img {
         transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
+    /* Animates the lines */
     .hamburgerMenu.open span:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
@@ -140,11 +154,12 @@ footer img {
         transform: translateY(-10px) rotate(-45deg);
     }
 
+    /* Changes the background color and reduce the space to either side of the navBar */
     nav {
         padding: 0em 1em;
         background-color: #121212;
     }
-
+    /* Reduce the size of the logo */
     .logo {
         font-size: var(--mobile-logo-size);
     }
@@ -157,6 +172,7 @@ footer img {
         right: 0;
         width: 15em;
         height: 100vh;
+        /*  */
         flex-direction: column;
         padding-top: calc(var(--mobile-logo-size) - 1em);
         gap: 0em;
