@@ -3,13 +3,18 @@ const navList = document.querySelector('nav ul');
 const nav = document.querySelector('nav');
 const body = document.body
 
+function closeNavBar()
+{
+    navList.classList.remove('open');
+    hamburgerMenu.classList.remove('open');
+    body.classList.remove('noScroll');
+}
+
 hamburgerMenu.addEventListener('click', () => {
     // Check if the menu is open or closed
     if (navList.classList.contains('open')) {
         // Triggers the closing animation and disables scrolling
-        navList.classList.remove('open');
-        hamburgerMenu.classList.remove('open');
-        body.classList.remove('noScroll');
+        closeNavBar();
 
         // After 500ms (duration of the CSS transition), set visibility to hidden this is to stop breakpoint flicker
         setTimeout(() => {
@@ -28,10 +33,7 @@ hamburgerMenu.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     if (window.innerWidth > 1000) {
         navList.style.visibility = '';
-
-        navList.classList.remove('open');
-        hamburgerMenu.classList.remove('open');
-        body.classList.remove('noScroll');
+        closeNavBar();
     }
 });
 
@@ -43,7 +45,13 @@ window.addEventListener('scroll', () => {
     else{
         nav.classList.remove('backgroundColor');
     }
-
 });
-    
 
+// Navbar closes when user clicks elsewhere
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!navList.contains(target) && !hamburgerMenu.contains(target))
+    {
+        closeNavBar();
+    }
+});

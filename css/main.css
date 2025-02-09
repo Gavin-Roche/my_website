@@ -1,16 +1,9 @@
 /* ----------General styles---------- */
 
-.nunito {
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "Nunito", "Arial Nova", ArialHelvetica, sans-serif;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -54,7 +47,7 @@ nav.backgroundColor {
     line-height: 1;
     text-decoration: none;
     color: #0070ff;
-    font-weight: 600;
+    font-weight: bold;
     /* Ensures this element above the hero image filter */
     z-index: 2;
 }
@@ -81,8 +74,8 @@ nav ul li a:hover {
 }
 
 /* stops scroling when the mobile navBar is open */
-body.noScroll {overflow: hidden;
-    
+body.noScroll {
+    overflow: hidden;
 }
 
 /* ----------social media section styles---------- */
