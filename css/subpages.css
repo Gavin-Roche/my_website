@@ -7,10 +7,6 @@ header {
     background-position: center;
     position: relative;
     background-image: url(/images/hero_image.webp), url(/images/hero_image_smaller.webp);
-    /*Title: "THE SHANNON RIVER [AS IT PASSES THROUGH THE CITY OF LIMERICK]-140736" by William Murphy, © 2018.
-    Licensed under Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0).
-    Available at: https://creativecommons.org/licenses/by-sa/2.0/ Source: https://www.flickr.com/photos/infomatique/42430992742 
-    Modified: Images has been formatted and compressed*/
 }
 
 /* Puts a filter above the hero image */
