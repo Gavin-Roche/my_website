@@ -1,0 +1,70 @@
+/* ----------variables---------- */
+
+:root {
+    --header-height: 100vh;
+    --headerText-font-size: 2em;
+    --headerText-font-size-1000px: 1.5em;
+    --bg-filter-color: #222c37b3;
+    --bg-image: url(/images/hero/hero.webp);
+    --bg-image-smaller: url(/images/hero/hero_smaller.webp);
+    /* Title: "THE SHANNON RIVER [AS IT PASSES THROUGH THE CITY OF LIMERICK]-140736" by William Murphy, © 2018.
+    Licensed under Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0).
+    Available at: https://creativecommons.org/licenses/by-sa/2.0/ Source: https://www.flickr.com/photos/infomatique/42430992742 
+    Modified: Images has been formatted and compressed */
+}
+
+/* ----------hero image styles---------- */
+header {
+    width: 100%;
+    height: var(--header-height);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: var(--bg-image), var(--bg-image-smaller);
+}
+
+/* Puts a filter above the hero image */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-filter-color);
+    /* Could be a method of allowing for smaller resources */
+    /* backdrop-filter: blur(2px); */
+    z-index: 1;
+}
+
+/* ----------headerText styles---------- */
+
+#headerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: var(--headerText-font-size);
+    color: #FFFFFF;
+    z-index: 2;
+    width: 90%;
+}
+
+#headerText span {
+    color: #0070ff;
+}
+
+/* ----------responsive section styles---------- */
+
+@media (max-width: 1000px) {
+    #headerText {
+        font-size: var(--headerText-font-size-1000px);
+    }
+}
+
+@media (max-width: 325px) {
+    #headerText {
+        font-size: 1.2em;
+    }
+}
