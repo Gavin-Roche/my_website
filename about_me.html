@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Welcome to Gavin Roche's personal website, where I showcase my projects, skills, and experience in computer networks and systems management.">
 
+        <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
+        <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
+
+        <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
 
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
@@ -17,7 +21,13 @@
 
     </head>
     
-    <body>
+    <body style=" 
+    --header-height: 50vh;
+    --headerText-font-size: 1.8em;
+    --headerText-font-size-1000px: 1.4em;
+    --bg-filter-color: #222c3780;
+    --bg-image: url(/images/subpages_hero/subpage_hero.webp);
+    --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);">
         <header>
             <nav>
                 <a href="index.html" class="logo">GR</a>
@@ -25,9 +35,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about_me.html">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Notebook</a></li>
-                    <li><a href="#">Contact Me</a></li>  
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>  
                 </ul>
 
                 <div class="hamburgerMenu">
@@ -36,6 +45,11 @@
                     <span></span>
                 </div>
             </nav>
+
+            <div id="headerText">
+                <h1>About Me</h1>
+                <p>Let me tell you a bit about me</p>
+            </div>
         </header>
 
         <footer>
