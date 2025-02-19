@@ -7,15 +7,18 @@
 
         <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
+        <link rel="preload" href="/css/about_me.css" as="style" type="text/css">
         <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/about_me.css">
 
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   
         <script src="javascript/main.js" defer></script>
+        <script src="javascript/about_me.js" defer></script>
 
         <title>Gavin Roche</title>
 
@@ -51,6 +54,63 @@
                 <p>Let me tell you a bit about me</p>
             </div>
         </header>
+
+        <section id="educationSection">
+            <h1 class="educationText">College Education Overview</h1>
+            <p class="educationText">​I am currently studying Computer Networks and Systems Management, 
+                which has now been renamed Computer Networks and Cyber Security, 
+                at TUS Midlands. I am a second-year student. Below is a list of all the subjects I am studying, 
+                along with a brief description of each and my grades.</p>
+        </section>
+
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">Communications And Applications</label>
+                <div class="content">
+                    <p>The aim of this module is to enable learners to communicate
+                        effectively and to support learner in their transition to
+                        becoming independent learners in higher education by
+                        enabling them to develop skills and strategies essential
+                        for success at this level while instilling the value of
+                        personal development and self-management. This module will
+                        give learners both the knowledge and practical skills in
+                        effective interpersonal communication that is required to
+                        be successful in study and beyond. Students will combine
+                        features across multiple applications to enable them to
+                        develop, interpret and express ideas through written, oral
+                        and visual communication.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Computer Mathematics</label>
+                <div class="content">
+                    <p>This module is designed to provide the student with the fundamental
+                        mathematical concepts encountered in the study of a computing discipline.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Digital Systems Concepts</label>
+                <div class="content">
+                    <p>The aim of this module is to enable learners to communicate
+                        effectively and to support learner in their transition to
+                        becoming independent learners in higher education by
+                        enabling them to develop skills and strategies essential
+                        for success at this level while instilling the value of
+                        personal development and self-management. This module will
+                        give learners both the knowledge and practical skills in
+                        effective interpersonal communication that is required to
+                        be successful in study and beyond. Students will combine
+                        features across multiple applications to enable them to
+                        develop, interpret and express ideas through written, oral
+                        and visual communication.</p>
+                </div>
+            </li>
+        </ul>
 
         <footer>
             

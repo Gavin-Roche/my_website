@@ -1,0 +1,60 @@
+#educationSection {
+    background-color: #333333;
+    padding: 3em 10%;
+}
+
+#educationSection h1 { 
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.accordion{
+    margin: 3em auto;
+    width: 90%; /*       come back*/
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid #575757;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+label::before {
+    content: '+';
+    margin-right: 1em;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0em 3em; /* remove these this lines and replace for cool affect*/
+    transition: max-height 0.5s, padding 1s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 100vh;
+    padding: 2em 3em;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+.accordion li label:hover{
+    background-color: #4C4C4C;
+}
