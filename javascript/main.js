@@ -37,6 +37,15 @@ window.addEventListener('resize', () => {
     }
 });
 
+// Navbar closes when user clicks elsewhere
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!navList.contains(target) && !hamburgerMenu.contains(target))
+    {
+        closeNavBar();
+    }
+});
+
 // Fades in and out the navBar background-color
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
@@ -44,14 +53,5 @@ window.addEventListener('scroll', () => {
     }
     else{
         nav.classList.remove('backgroundColor');
-    }
-});
-
-// Navbar closes when user clicks elsewhere
-document.addEventListener('click', (event) => {
-    const target = event.target;
-    if (!navList.contains(target) && !hamburgerMenu.contains(target))
-    {
-        closeNavBar();
     }
 });
