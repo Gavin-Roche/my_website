@@ -1,3 +1,5 @@
+/* ----------Education Text styles---------- */
+
 #educationSection {
     background-color: #333333;
     padding: 3em 10%;
@@ -9,9 +11,26 @@
     padding-bottom: 0.5em;
 }
 
+/* ----------Accordion Headers styles---------- */
+
+#subjectGrade {
+    display: flex;
+    align-items: center;
+    padding: 0.3em 1.5em;
+    background-color: #333333;
+    font-size: 1.3em;
+}
+
+/* Pushes this element to the right */
+#grade{
+    margin-left: auto;
+}
+
+/* ----------Accordion styles---------- */
+
 .accordion{
     margin: 3em auto;
-    width: 90%; /*       come back*/
+    width: 90%;
 }
 
 .accordion li {
@@ -24,8 +43,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5em;
-    font-size: 1.5em;
+    padding: 0.2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
@@ -42,7 +61,7 @@ input[type="radio"] {
     color: white;
     max-height: 0;
     overflow: hidden;
-    padding: 0em 3em; /* remove these this lines and replace for cool affect*/
+    padding: 0em 3em; /* remove these this lines for cool affect */
     transition: max-height 0.5s, padding 1s;
 }
 
@@ -51,6 +70,7 @@ input[type="radio"] {
     padding: 2em 3em;
 }
 
+/* Changes the + to - when expanded */
 .accordion input[type="radio"]:checked + label::before {
     content: '-';
 }
