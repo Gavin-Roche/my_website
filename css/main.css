@@ -1,4 +1,4 @@
-/* ----------General styles---------- */
+/* ----------general styles---------- */
 
 * {
     margin: 0;
@@ -73,7 +73,7 @@ nav ul li a:hover {
     color: #9a9a9a;
 }
 
-/* stops scroling when the mobile navBar is open */
+/* stops scrolling when the mobile navBar is open */
 body.noScroll {
     overflow: hidden;
 }
