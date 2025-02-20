@@ -1,12 +1,13 @@
-let lastChecked = null; // Store the last checked radio
+const accordionHeaders = document.querySelectorAll('.accordionHeader');
 
-document.querySelectorAll('.accordion input[type="radio"]').forEach(radio => {
-    radio.addEventListener('click', function () {
-        if (lastChecked === this) { // If the same radio is clicked again
-            this.checked = false; // Uncheck it
-            lastChecked = null; // Reset the last checked
-        } else {
-            lastChecked = this; // Store the new checked radio
-        }
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        // Closes all the other accordion's content
+        accordionHeaders.forEach(otherHeader => {
+            if (otherHeader !== this) {
+                otherHeader.classList.remove('active');
+            }   
+        });
+        this.classList.toggle('active');
     });
 });

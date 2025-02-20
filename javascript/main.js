@@ -20,7 +20,8 @@ hamburgerMenu.addEventListener('click', () => {
         setTimeout(() => {
             navList.style.visibility = 'hidden';
         }, 500);
-    } else {
+    }
+    else {
         // Triggers the opening animation and enables scrolling
         navList.style.visibility = 'visible';
         navList.classList.add('open');
@@ -40,8 +41,7 @@ window.addEventListener('resize', () => {
 // Navbar closes when user clicks elsewhere
 document.addEventListener('click', (event) => {
     const target = event.target;
-    if (!navList.contains(target) && !hamburgerMenu.contains(target))
-    {
+    if (!navList.contains(target) && !hamburgerMenu.contains(target)) {
         closeNavBar();
     }
 });
@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         nav.classList.add('backgroundColor');
     }
-    else{
+    else {
         nav.classList.remove('backgroundColor');
     }
 });

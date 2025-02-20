@@ -22,13 +22,13 @@
 }
 
 /* Pushes this element to the right */
-#grade{
+#grade {
     margin-left: auto;
 }
 
 /* ----------Accordion styles---------- */
 
-.accordion{
+.accordion {
     margin: 3em auto;
     width: 90%;
 }
@@ -39,7 +39,7 @@
     border-top: 1px solid #575757;
 }
 
-.accordion li label {
+.accordionHeader {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -48,33 +48,31 @@
     font-weight: 600;
 }
 
-label::before {
+/* Add the "+" symbol dynamically */
+.accordionHeader::before {
     content: '+';
     margin-right: 1em;
 }
 
-input[type="radio"] {
-    display: none;
+/* Changes the + to - when expanded */
+.accordionHeader.active::before {
+    content: "\2212";
 }
 
-.accordion .content {
-    color: white;
-    max-height: 0;
+/* Hide content by default */
+.content {
     overflow: hidden;
-    padding: 0em 3em; /* remove these this lines for cool affect */
+    max-height: 0;
+    padding: 0em 3em; /*  remove this lines for cool affect */
     transition: max-height 0.5s, padding 1s;
 }
 
-.accordion input[type="radio"]:checked + label + .content {
-    max-height: 100vh;
+/* Opens the content */
+.accordionHeader.active + .content {
     padding: 2em 3em;
+    max-height: 100vh;
 }
 
-/* Changes the + to - when expanded */
-.accordion input[type="radio"]:checked + label::before {
-    content: '-';
-}
-
-.accordion li label:hover{
+.accordionHeader:hover {
     background-color: #4C4C4C;
 }
