@@ -6,7 +6,6 @@
 }
 
 #educationSection {
-    background-color: #333333;
     padding: 3em 10%;
 }
 
@@ -16,9 +15,15 @@
     padding-bottom: 0.5em;
 }
 
+#educationSection h2 { 
+    font-size: 2em;
+    text-align: center;
+    padding: 1.5em 0 0.5em 0;
+}
+
 /* ----------Accordion Headers styles---------- */
 
-#subjectGrade {
+.subjectGradeLabelContainer {
     display: flex;
     align-items: center;
     padding: 0.3em 1.5em;
@@ -27,18 +32,18 @@
 }
 
 /* Pushes this element to the right */
-#grade {
+.gradeLabel {
     margin-left: auto;
 }
 
 /* ----------Accordion styles---------- */
 
 .accordion {
-    margin: 3em auto;
-    width: 90%;
+    margin: 0em auto;
+    width: 100%;
 }
 
-.accordion li {
+.subject {
     list-style: none;
     width: 100%;
     border-top: 1px solid #575757;
@@ -85,6 +90,6 @@
     background-color: #4C4C4C;
 }
 
-.accordionHeader p {
+.grade {
     margin: 0 1.5em 0 auto;
 }
