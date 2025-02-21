@@ -1,5 +1,10 @@
 /* ----------Education Text styles---------- */
 
+:root {
+    --padding-grade-and-subject: 1.5em;
+    --mobile-logo-size: 3.5em;
+}
+
 #educationSection {
     background-color: #333333;
     padding: 3em 10%;
@@ -46,6 +51,9 @@
     padding: 0.2em;
     font-size: 1.1em;
     font-weight: 600;
+    /* Ensures that there isn't a blue selector color on the element when they are clicked */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 /* Add the "+" symbol dynamically */
@@ -77,8 +85,6 @@
     background-color: #4C4C4C;
 }
 
-.accordionHeader {
-    /* Ensures that there isn't a blue selector color on the element when they are clicked */
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-} 
+.accordionHeader p {
+    margin: 0 1.5em 0 auto;
+}

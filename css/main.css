@@ -22,6 +22,7 @@ a, .hamburgerMenu {
 :root {
     --logo-size: 5em;
     --mobile-logo-size: 3.5em;
+    --mobile-a-tag-padding: 1em;
 }
 
 nav {
@@ -168,7 +169,7 @@ footer img {
         width: 15em;
         height: 100vh;
         flex-direction: column;
-        padding-top: calc(var(--mobile-logo-size) - 1em);
+        padding-top: calc(var(--mobile-logo-size) - var(--mobile-a-tag-padding));
         gap: 0em;
         transform: translateX(100vw);
         opacity: 0;
@@ -188,7 +189,7 @@ footer img {
 
     nav ul li a {
         display: block;
-        padding: 1em;
+        padding: var(--mobile-a-tag-padding);
         text-align: center;
     }
 
