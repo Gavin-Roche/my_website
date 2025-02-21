@@ -12,7 +12,7 @@ body {
 }
 
 a, .hamburgerMenu {
-    /* Ensures that there isn't a bule selector color on items when they are clicked */
+    /* Ensures that there isn't a blue selector color on items when they are clicked */
     -webkit-tap-highlight-color: transparent;
     outline: none;
 } 
@@ -25,16 +25,16 @@ a, .hamburgerMenu {
 }
 
 nav {
-    /* Keeps the navBar at the top while being a reference for (nav ul) the options */
-    position: sticky;
     /* Ensures this element above the headerText */
     z-index: 3;
     /* Adds space the right and left of the navBar */
     padding: 0em 10%;
+    position: fixed;
     top: 0em;
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease;
+    width: 80%;
 }
 
 nav.backgroundColor {
@@ -150,7 +150,8 @@ footer img {
 
     /* Changes the background color and reduce the space to either side of the navBar */
     nav {
-        padding: 0em 1em;
+        width: calc(100% - 2em);
+        padding: 0 1em;
         background-color: #121212;
     }
     /* Reduce the size of the logo */
@@ -166,11 +167,10 @@ footer img {
         right: 0;
         width: 15em;
         height: 100vh;
-        /*  */
         flex-direction: column;
         padding-top: calc(var(--mobile-logo-size) - 1em);
         gap: 0em;
-        transform: translateX(100%);
+        transform: translateX(100vw);
         opacity: 0;
         visibility: hidden;
         transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;

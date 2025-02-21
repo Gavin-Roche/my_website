@@ -76,3 +76,9 @@
 .accordionHeader:hover {
     background-color: #4C4C4C;
 }
+
+.accordionHeader {
+    /* Ensures that there isn't a blue selector color on the element when they are clicked */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+} 
