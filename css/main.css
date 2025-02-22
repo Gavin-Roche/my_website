@@ -108,7 +108,7 @@ footer img {
 
 .legal a {
     text-decoration: none;
-    color: #0070ff;
+    color: #0070FF;
 }
 
 /* ----------responsive section styles---------- */
@@ -161,7 +161,7 @@ footer img {
     }
 
     nav ul {
-        background-color: #121212cc;
+        background-color: #121212CC;
         backdrop-filter: blur(10px);
         position: fixed;
         top: 0;
