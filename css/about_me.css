@@ -115,25 +115,27 @@ sup {
     display: flex;
     margin-top: 2em;
     justify-content: space-around;
+    background-color: #333333;
+    border: 1px solid #575757;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .tabLinks {
     list-style: none;
     cursor: pointer;
     position: relative;
+    width: 25%;
+    text-align: center;
+    padding: 0.5em;
+    color: #FFFFFF;
 }
 
-.tabLinks::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: #0070ff;
-    position: absolute;
-    left: 0;
-    bottom: -0.5em;
-    transition: width 0.5s;
+.tabLinks.active{
+    background-color: #0070FF;
 }
 
-.tabLinks.active::after {
-    width: 100%;
+/* Add a divider between buttons */
+.tabLinks:not(:last-child) {
+    border-right: 1px solid #575757;
 }
