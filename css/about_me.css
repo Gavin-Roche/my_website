@@ -1,3 +1,9 @@
+/* ----------General styles---------- */
+
+sup {
+    font-size: 0.6em;
+}
+
 /* ----------Education Text styles---------- */
 
 :root {
@@ -9,13 +15,17 @@
     padding: 3em 10%;
 }
 
-#educationSection h1 { 
+.educationParagraph{
+    color: #9a9a9a;
+}
+
+.collegeEducationOverview{
     font-size: 3em;
     text-align: center;
     padding-bottom: 0.5em;
 }
 
-#educationSection h2 { 
+.yearGrades { 
     font-size: 2em;
     text-align: center;
     padding: 1.5em 0 0.5em 0;
@@ -41,6 +51,11 @@
 .accordion {
     margin: 0em auto;
     width: 100%;
+    display: none;
+}
+
+.accordion.active {
+    display: block;
 }
 
 .subject {
@@ -92,4 +107,35 @@
 
 .grade {
     margin: 0 1.5em 0 auto;
+}
+
+/* ----------tab menu---------- */
+
+.tabTitle {
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-around;
+    background-color: #333333;
+    border: 1px solid #575757;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabLinks {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    padding: 0.5em;
+    color: #FFFFFF;
+}
+
+.tabLinks.active{
+    background-color: #0070FF;
+}
+
+/* Add a divider between buttons */
+.tabLinks:not(:last-child) {
+    border-right: 1px solid #575757;
 }
