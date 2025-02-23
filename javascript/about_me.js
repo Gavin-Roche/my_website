@@ -34,6 +34,8 @@ const fourthYearSubjects = [
 { name: "Server Administration: Applications", grade: "N/A", description: "This module teaches students the skills needed to automate tasks across various server operating systems, improving efficiency and reducing human error. It focuses on the automation of complex systems and infrastructure management, essential for modern system administrators handling large-scale environments." },
 { name: "Software Defined Networks & Network Automation", grade: "N/A", description: "This module explores emerging solutions in Software Defined Networking and Automation for SMEs, focusing on scalable technologies. It combines theory with practical learning to develop essential skills in problem-solving and collaboration, preparing students for real-world applications." }];
 
+
+
 function createAccordion(subjectList, parentElement) {
     subjectList.forEach(subject => {
         const li = document.createElement('li');
@@ -43,23 +45,9 @@ function createAccordion(subjectList, parentElement) {
         header.className = "accordionHeader";
         header.innerHTML = `<p>${subject.name}</p><p class="grade">${subject.grade}</p>`;
     
-        const content = document.createElement('div');
+        const content = document.createElement('p');
         content.className = "content";
-        content.innerHTML = `<p>${subject.description}</p>`;
-    
-    
-        header.addEventListener('click', () => {
-            const isActive = header.classList.contains('active')
-            document.querySelectorAll('.accordionHeader').forEach(head => head.classList.remove('active'));
-            document.querySelectorAll('.content').forEach(cont => {
-                cont.style.maxHeight = "0";
-            });
-    
-            if(!isActive) {
-                header.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+        content.innerHTML = `${subject.description}`;
     
         li.append(header);
         li.append(content);
@@ -75,9 +63,11 @@ createAccordion(secondYearSubjects, secondYearList);
 createAccordion(thirdYearSubjects, thirdYearList);
 createAccordion(fourthYearSubjects, fourthYearList);
 
+
+
+// Controls the accordion behavior first years
 const accordionHeaders = document.querySelectorAll('.accordionHeader');
 
-// Controls the accordion behavior
 accordionHeaders.forEach(header => {
     header.addEventListener('click', function() {
         // Closes all the other accordion's content
@@ -90,10 +80,12 @@ accordionHeaders.forEach(header => {
     });
 });
 
+
+
+// Switches between the different tabs
 const tabLinks = document.querySelectorAll('.tabLinks');
 const years = document.querySelectorAll('.year');
 
-// Switches between the different tabs
 tabLinks.forEach((tab, index) => {
     tab.addEventListener('click', function() {
 

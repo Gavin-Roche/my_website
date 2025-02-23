@@ -86,15 +86,17 @@ footer img {
     width: 2rem;
 }
 
-.contactSocialMedia {
+.contactContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    padding-top: 1rem;
+    gap: 1rem;
+    padding: 1.5em;
 }
 
 .socialMediaIcons {
-    padding-bottom: 1rem;
+    display: flex;
     gap: 2rem;
 }
 
@@ -103,7 +105,7 @@ footer img {
 .legal {
     background-color: #000000;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .legal a {
@@ -198,7 +200,7 @@ footer img {
         color: #FFFFFF;
     }
 
-    .contactSocialMedia, .legal {
+    footer {
         font-size: 0.9rem;
     }
 
@@ -206,21 +208,26 @@ footer img {
         font-size: 1rem;
     }
 
-    h1.contactSocialMedia {
+    .contactContainer h1 {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 350px) {
     nav ul {
         width: 100%;
     }
 
-    .contactSocialMedia, .legal {
+    footer {
         font-size: 0.7rem;
     }
 
-    h1.contactSocialMedia {
+    footer img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .contactContainer h1 {
         font-size: 1.2rem;
     }
 }
