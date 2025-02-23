@@ -7,38 +7,44 @@ sup {
 /* ----------Education Text styles---------- */
 
 :root {
-    --padding-grade-and-subject: 1.5em;
-    --mobile-logo-size: 3.5em;
+    --padding-grade-and-subject: 1.5rem;
+    --mobile-logo-size: 3.5rem;
 }
 
 #educationSection {
-    padding: 3em 10%;
+    margin: 3rem 10%;
 }
 
-.educationParagraph{
+.EducationHeader {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.educationParagraph {
     color: #9a9a9a;
+    margin-bottom: 3rem;
 }
 
-.collegeEducationOverview{
-    font-size: 3em;
+.yearOfGrades { 
+    font-size: 2rem;
     text-align: center;
-    padding-bottom: 0.5em;
+    margin-bottom: 1.5rem;
 }
 
-.yearGrades { 
-    font-size: 2em;
-    text-align: center;
-    padding: 1.5em 0 0.5em 0;
+.yearOfGradesListItem {
+    list-style: none;
 }
 
 /* ----------Accordion Headers styles---------- */
 
-.subjectGradeLabelContainer {
+.accordionLabels {
     display: flex;
     align-items: center;
-    padding: 0.3em 1.5em;
+    padding: 0.5rem 2rem;
     background-color: #333333;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 /* Pushes this element to the right */
@@ -49,7 +55,7 @@ sup {
 /* ----------Accordion styles---------- */
 
 .accordion {
-    margin: 0em auto;
+    margin: 0rem auto;
     width: 100%;
     display: none;
 }
@@ -68,9 +74,8 @@ sup {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.2em;
-    font-size: 1.1em;
-    font-weight: 600;
+    padding: 0.5rem 0.36em;
+    font-size: 1.1rem;
     /* Ensures that there isn't a blue selector color on the element when they are clicked */
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -79,7 +84,7 @@ sup {
 /* Add the "+" symbol dynamically */
 .accordionHeader::before {
     content: '+';
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 /* Changes the + to - when expanded */
@@ -91,13 +96,13 @@ sup {
 .content {
     overflow: hidden;
     max-height: 0;
-    padding: 0em 3em; /*  remove this lines for cool affect */
+    padding: 0rem 3rem; /*  remove this lines for cool affect */
     transition: max-height 0.5s, padding 1s;
 }
 
 /* Opens the content */
 .accordionHeader.active + .content {
-    padding: 2em 3em;
+    padding: 2rem 3rem;
     max-height: 100vh;
 }
 
@@ -106,14 +111,14 @@ sup {
 }
 
 .grade {
-    margin: 0 1.5em 0 auto;
+    margin: 0 1.64rem 0 auto;
 }
 
 /* ----------tab menu---------- */
 
 .tabTitle {
     display: flex;
-    margin-top: 2em;
+    margin-bottom: 3rem;
     justify-content: space-around;
     background-color: #333333;
     border: 1px solid #575757;
@@ -127,15 +132,30 @@ sup {
     position: relative;
     width: 25%;
     text-align: center;
-    padding: 0.5em;
-    color: #FFFFFF;
+    padding: 0.5rem;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
-.tabLinks.active{
-    background-color: #0070FF;
+.tabLinks:hover {
+    background-color: #4C4C4C;
+}
+
+.tabLinks.active {
+    background-color: #0037FF;
 }
 
 /* Add a divider between buttons */
 .tabLinks:not(:last-child) {
     border-right: 1px solid #575757;
+}
+
+/* ----------responsive section styles---------- */
+
+@media (max-width: 1000px) {
+
+    .EducationHeader {
+        font-size: 3rem;
+    }
 }

@@ -20,18 +20,18 @@ a, .hamburgerMenu {
 /* ----------navbar styles---------- */
 
 :root {
-    --logo-size: 5em;
-    --mobile-logo-size: 3.5em;
-    --mobile-a-tag-padding: 1em;
+    --logo-size: 5rem;
+    --mobile-logo-size: 3.5rem;
+    --mobile-a-tag-padding: 1rem;
 }
 
 nav {
     /* Ensures this element above the headerText */
     z-index: 3;
     /* Adds space the right and left of the navBar */
-    padding: 0em 10%;
+    padding: 0rem 10%;
     position: fixed;
-    top: 0em;
+    top: 0rem;
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease;
@@ -44,7 +44,7 @@ nav.backgroundColor {
 
 .logo {
     font-size: var(--logo-size);
-    padding: 0em;
+    padding: 0rem;
     line-height: 1;
     text-decoration: none;
     color: #0070ff;
@@ -57,7 +57,7 @@ nav ul {
     /* Pushes this element to the right */
     margin-left: auto;
     display: flex;
-    gap: 4em;
+    gap: 4rem;
 }
 
 nav ul li {
@@ -82,20 +82,20 @@ body.noScroll {
 /* ----------social media section styles---------- */
 
 footer img {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
 }
 
 .contactSocialMedia {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 .socialMediaIcons {
-    padding-bottom: 1em;
-    gap: 2em;
+    padding-bottom: 1rem;
+    gap: 2rem;
 }
 
 /* ----------legal section styles---------- */
@@ -103,7 +103,7 @@ footer img {
 .legal {
     background-color: #000000;
     text-align: center;
-    padding: 1.5em;
+    padding: 1.5rem;
 }
 
 .legal a {
@@ -151,8 +151,8 @@ footer img {
 
     /* Changes the background color and reduce the space to either side of the navBar */
     nav {
-        width: calc(100% - 2em);
-        padding: 0 1em;
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
         background-color: #121212;
     }
     /* Reduce the size of the logo */
@@ -166,11 +166,11 @@ footer img {
         position: fixed;
         top: 0;
         right: 0;
-        width: 15em;
+        width: 15rem;
         height: 100vh;
         flex-direction: column;
         padding-top: calc(var(--mobile-logo-size) - var(--mobile-a-tag-padding));
-        gap: 0em;
+        gap: 0;
         transform: translateX(100vw);
         opacity: 0;
         visibility: hidden;
@@ -199,15 +199,15 @@ footer img {
     }
 
     .contactSocialMedia, .legal {
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 
     .socialMediaIcons {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     h1.contactSocialMedia {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
@@ -217,10 +217,10 @@ footer img {
     }
 
     .contactSocialMedia, .legal {
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
 
     h1.contactSocialMedia {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }

@@ -2,8 +2,8 @@
 
 :root {
     --header-height: 100vh;
-    --headerText-font-size: 2em;
-    --headerText-font-size-1000px: 1.5em;
+    --headerText-font-size: 2rem;
+    --headerText-font-size-1000px: 1.5rem;
     --bg-filter-color: #222c37b3;
     --bg-image: url(/images/hero/hero.webp);
     --bg-image-smaller: url(/images/hero/hero_smaller.webp);
@@ -65,6 +65,6 @@ header::before {
 
 @media (max-width: 325px) {
     #headerText {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
