@@ -1,8 +1,8 @@
 const secondYearSubjects = [
-{ name: "Statistics and Probability", grade: "97%", description: "This module aims to further develop mathematical ability and provide the basic statistical and probability concepts required for information technology, along with the knowledge needed for data analysis." },
-{ name: "Introduction to Object Oriented Programming", grade: "95%", description: "This module introduces the principles of object-oriented programming in C++, focusing on the creation and manipulation of classes and objects." },
-{ name: "Operating Systems Structures", grade: "92%", description: "This module extends concepts from Operating Systems Fundamentals to multi-user and network-based operating systems." },
-{ name: "Data Formats and Storage", grade: "87%", description: "This module introduces data storage systems and various formats used for reliable and efficient data storage." },
+{ name: "Statistical Data Analysis", grade: "97%", description: "This module aims to further develop mathematical ability and provide the basic statistical and probability concepts required for information technology, along with the knowledge needed for data analysis." },
+{ name: "Intro to Object Oriented Programming", grade: "95%", description: "This module introduces the principles of object-oriented programming in C++, focusing on the creation and manipulation of classes and objects." },
+{ name: "OS Structures", grade: "92%", description: "This module extends concepts from Operating Systems Fundamentals to multi-user and network-based operating systems." },
+{ name: "Data Formats & Storage", grade: "87%", description: "This module introduces data storage systems and various formats used for reliable and efficient data storage." },
 { name: "Enterprise Network Design", grade: "85%", description: "This module provides a survey of architectures and considerations for designing, securing, operating, and troubleshooting enterprise networks, along with automation concepts supporting network digitization." },
 { name: "Data Essentials", grade: "68%", description: "This module provides a solid foundation for working with data and databases, covering fundamental concepts, design principles, and key terminology." },
 { name: "Client-Server Technologies", grade: "N/A", description: "This module introduces the client-server paradigm, covering the technologies and methods used to implement client-server systems." },
@@ -80,11 +80,9 @@ accordionHeaders.forEach(header => {
     });
 });
 
-
-
 // Switches between the different tabs
 const tabLinks = document.querySelectorAll('.tabLinks');
-const years = document.querySelectorAll('.year');
+const years = document.querySelectorAll('.accordion');
 
 tabLinks.forEach((tab, index) => {
     tab.addEventListener('click', function() {

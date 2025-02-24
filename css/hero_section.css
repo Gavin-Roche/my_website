@@ -63,7 +63,7 @@ header::before {
     }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 350px) {
     #headerText {
         font-size: 1.2rem;
     }

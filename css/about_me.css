@@ -15,22 +15,21 @@ sup {
     margin: 3rem 10%;
 }
 
-.EducationHeader {
-    font-size: 3rem;
+.educationHeader {
+    font-size: 2.6rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
-
 .educationParagraph {
-    color: #9a9a9a;
-    margin-bottom: 3rem;
+    color: #9A9A9A;
+    margin-bottom: 1rem;
 }
 
 .yearOfGrades { 
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .yearOfGradesListItem {
@@ -45,6 +44,7 @@ sup {
     padding: 0.5rem 2rem;
     background-color: #333333;
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /* Pushes this element to the right */
@@ -55,7 +55,6 @@ sup {
 /* ----------Accordion styles---------- */
 
 .accordion {
-    margin: 0rem auto;
     width: 100%;
     display: none;
 }
@@ -74,8 +73,9 @@ sup {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem 0.36em;
+    padding: 0.5rem 0.36rem;
     font-size: 1.1rem;
+    font-weight: bold;
     /* Ensures that there isn't a blue selector color on the element when they are clicked */
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -112,6 +112,7 @@ sup {
 
 .grade {
     margin: 0 1.64rem 0 auto;
+    padding-left: 2rem;
 }
 
 /* ----------tab menu---------- */
@@ -155,7 +156,54 @@ sup {
 
 @media (max-width: 1000px) {
 
-    .EducationHeader {
-        font-size: 3rem;
+    .accordionLabels {
+        font-size: 1.1rem;
+    }
+
+    .accordionHeader {
+        font-size: 1rem;
+    }
+
+    .yearOfGrades { 
+        font-size: 1.5rem;
+    }
+
+    .tabLinks {
+        padding: 0.3rem;
+    }
+
+    .content {
+        padding: 0rem 1rem;
+    }
+
+    .accordionHeader.active + .content {
+        padding: 2rem 1rem;
+    }
+
+    #educationSection {
+        margin: 3rem 1rem;
+    }
+
+    .educationHeader {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .yearOfGrades {
+        font-size: 1.2rem;
+    }
+
+    .educationHeader {
+        font-size: 1.6rem;
+    }
+
+    .accordionLabels {
+        font-size: 0.9rem;
+    }
+
+    .educationParagraph, .accordionHeader {
+        font-size: 0.8rem;
     }
 }

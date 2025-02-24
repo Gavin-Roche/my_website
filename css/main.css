@@ -157,6 +157,7 @@ footer img {
         padding: 0 1rem;
         background-color: #121212;
     }
+
     /* Reduce the size of the logo */
     .logo {
         font-size: var(--mobile-logo-size);
@@ -200,16 +201,12 @@ footer img {
         color: #FFFFFF;
     }
 
-    footer {
-        font-size: 0.9rem;
-    }
-
-    .socialMediaIcons {
-        font-size: 1rem;
-    }
-
     .contactContainer h1 {
         font-size: 1.5rem;
+    }
+
+    .contactContainer p {
+        font-size: 0.9rem;
     }
 }
 
@@ -218,16 +215,16 @@ footer img {
         width: 100%;
     }
 
-    footer {
-        font-size: 0.7rem;
+    .contactContainer h1 {
+        font-size: 1.2rem;
+    }
+
+    .contactContainer p, .tabLinks, .content {
+        font-size: 0.8rem;
     }
 
     footer img {
         height: 1.5rem;
         width: 1.5rem;
-    }
-
-    .contactContainer h1 {
-        font-size: 1.2rem;
     }
 }
