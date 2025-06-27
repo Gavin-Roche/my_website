@@ -1,16 +1,16 @@
 const secondYearSubjects = [
 { name: "Statistical Data Analysis", grade: "97%", description: "This module aims to further develop mathematical ability and provide the basic statistical and probability concepts required for information technology, along with the knowledge needed for data analysis." },
 { name: "Intro to Object Oriented Programming", grade: "95%", description: "This module introduces the principles of object-oriented programming in C++, focusing on the creation and manipulation of classes and objects." },
+{ name: "Operating Systems Scripting", grade: "93%", description: "This module introduces scripting for the purposes of operating systems administration." },
 { name: "OS Structures", grade: "92%", description: "This module extends concepts from Operating Systems Fundamentals to multi-user and network-based operating systems." },
+{ name: "Public Cloud Foundations", grade: "90%", description: "This module will enable learners to manage the computer networking components of multimedia or internet application development and introduce the fundamentals of Cloud Computing." },
+{ name: "Cyber Security Operations", grade: "87%", description: "This module is designed to equip individuals with the skills and knowledge needed to work as a Security Analyst in a Security Operations Centre team, balancing theory and practice." },
 { name: "Data Formats & Storage", grade: "87%", description: "This module introduces data storage systems and various formats used for reliable and efficient data storage." },
 { name: "Enterprise Network Design", grade: "85%", description: "This module provides a survey of architectures and considerations for designing, securing, operating, and troubleshooting enterprise networks, along with automation concepts supporting network digitization." },
-{ name: "Data Essentials", grade: "68%", description: "This module provides a solid foundation for working with data and databases, covering fundamental concepts, design principles, and key terminology." },
-{ name: "Client-Server Technologies", grade: "N/A", description: "This module introduces the client-server paradigm, covering the technologies and methods used to implement client-server systems." },
-{ name: "Cyber Security Operations", grade: "N/A", description: "This module is designed to equip individuals with the skills and knowledge needed to work as a Security Analyst in a Security Operations Centre team, balancing theory and practice." },
-{ name: "Database Administration", grade: "N/A", description: "The aim of the module is to enable individuals to acquire and demonstrate a comprehensive understanding of modern techniques and challenges in commercial client/server database administration, processing, and subsequent analysis." },
-{ name: "Operating Systems Scripting", grade: "N/A", description: "This module introduces scripting for the purposes of operating systems administration." },
-{ name: "Public Cloud Foundations", grade: "N/A", description: "This module will enable learners to manage the computer networking components of multimedia or internet application development and introduce the fundamentals of Cloud Computing." },
-{ name: "Server Virtualisation & Storage", grade: "N/A", description: "This module will allow learners to examine the principles and technologies that enable SMEs and enterprise businesses to deploy and manage virtual servers and storage devices in data centers." }];
+{ name: "Server Virtualisation & Storage", grade: "84%", description: "This module will allow learners to examine the principles and technologies that enable SMEs and enterprise businesses to deploy and manage virtual servers and storage devices in data centers." },
+{ name: "Database Administration", grade: "83%", description: "The aim of the module is to enable individuals to acquire and demonstrate a comprehensive understanding of modern techniques and challenges in commercial client/server database administration, processing, and subsequent analysis." },
+{ name: "Client-Server Technologies", grade: "83%", description: "This module introduces the client-server paradigm, covering the technologies and methods used to implement client-server systems." },
+{ name: "Data Essentials", grade: "68%", description: "This module provides a solid foundation for working with data and databases, covering fundamental concepts, design principles, and key terminology." }];
 
 const thirdYearSubjects = [
 { name: "Data Comms", grade: "N/A", description: "This module explores the principles of data transmission and reception across networks. It covers a range of technologies, enabling a clear understanding of their capabilities and how to compare and select different network components and systems." },
