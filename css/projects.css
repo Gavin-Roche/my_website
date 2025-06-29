@@ -24,18 +24,18 @@
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
-h2 {
+.cardTitle {
     color: #0070ff;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
-.card p {
+.cardText {
     color: #D3D3D3;
     padding-bottom: 1rem;
 }
 
-.card a {
+.cardLink {
     color: #2987FF;
     align-self: flex-start;
 }
@@ -52,17 +52,17 @@ h2 {
     padding: 1em;
     }
 
-    h2 {
+    .cardTitle {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     }
 
-    .card p {
+    .cardText {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
     }
 
-    .card a {
+    .cardLink {
     font-size: 0.9rem;
     }
 }
@@ -84,16 +84,16 @@ h2 {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     }
 
-    h2 {
+    .cardTitle {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     }
 
-    .card p {
+    .cardText {
     padding-bottom: 0.5rem;
     }
 
-    .card a, .card p {
+    .cardLink, .card p {
         font-size: 0.8rem;
     }
 }
