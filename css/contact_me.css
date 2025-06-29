@@ -71,6 +71,73 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    .cardName {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .cardName {
+        font-size: 1.2rem;
+    }
+}
+
+.cardIcon {
+    height: 1.7rem;
+}
+
+.nameLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.cardName {
+    color: #0070ff;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* #nameEmail input:focus {
     outline: 1px solid #0070FF;
 

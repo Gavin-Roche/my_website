@@ -6,12 +6,11 @@ linkedin
 github
 <!--"Icon made by Laisa Islam Ani from www.flaticon.com"/-->
 
-email
+message
 <!--"Icon made by Freepik from www.flaticon.com"/-->
 
-form
-<!--"Icon made by RIkas Dzihab from www.flaticon.com"/-->
-
+credly
+<!--"Icon made by credly.com from brandfetch.com"/-->
 
 Hero Image
 

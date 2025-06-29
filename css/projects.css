@@ -49,21 +49,20 @@
     }
 
     .card {
-    padding: 1em;
+        padding: 1em;
     }
 
     .cardTitle {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+        font-size: 1.3rem;
     }
 
     .cardText {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
     }
 
     .cardLink {
-    font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -74,23 +73,18 @@
     }
 
     .card {
-    padding: 0.7em;
+        padding: 0.7em;
     }
 }
 
 @media (max-width: 350px) {
 
     #gridContent {
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     }
 
     .cardTitle {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    }
-
-    .cardText {
-    padding-bottom: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .cardLink, .card p {

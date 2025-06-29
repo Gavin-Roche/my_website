@@ -9,11 +9,13 @@
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
         <link rel="preload" href="/css/contact_me.css" as="style" type="text/css">
         <link rel="preload" href="/css/subpages.css" as="style" type="text/css">
+        <link rel="preload" href="/css/projects.css" as="style" type="text/css">
         <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/contact_me.css">
+        <link rel="stylesheet" href="/css/projects.css">
         <link rel="stylesheet" href="/css/subpages.css">
 
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
@@ -57,56 +59,69 @@
         </header>
 
         <section class="firstSection">
-                <h1 class="sectionHeader">Contact Form</h1>
-                    <p class="firstSectionParagraph">Feel free to reach out to me using the form below. I’ll do my best to get back to you as soon as
-                        possible via email. Whether you have a question, feedback, or just want to connect, I’d love to hear from you!</p>
+            <h1 class="sectionHeader">Contact Form</h1>
+                <p class="sectionParagraph">Feel free to reach out to me using the form below. I’ll do my best to get back to you as soon as
+                    possible via email. Whether you have a question, feedback, or just want to connect, I’d love to hear from you!</p>
 
-                    <form action="https://formsubmit.co/69d8a3aeb90af9cc97123e66e984d8c3" method="POST">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/about_me.html">
-                        <input type="hidden" name="_captcha" value="false">
+                <form action="https://formsubmit.co/69d8a3aeb90af9cc97123e66e984d8c3" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/about_me.html">
+                    <input type="hidden" name="_captcha" value="false">
 
-                        <div id="nameEmail">
-                            <input type="text" id="name" name="name" placeholder="Name" required>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </div>
-
-                        <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-
-                        <div id="submitContainer">
-                            <input id="submit" type="submit" value="Submit Message">
-                        </div>
-                    </form>
-        </section>
-
-                <section class="secondSection">
-                <h1 class="secondHeader">Contact Form</h1>
-                    <p class="secondSectionParagraph">Feel free to reach out to me using the form below. I’ll do my best to get back to you as soon as
-                        possible via email. Whether you have a question, feedback, or just want to connect, I’d love to hear from you!</p>
-
-                    <div id="gridContent">
-                    <div class="card">
-                        <h2>Connect 4 AI</h2>
-                            <p>A Connect 4 implementation in Python with AI, multiplayer, simulations, and statistical analysis.</p>
-                            <a href="https://github.com/Gavin-Roche" class="github-link" target="_blank">View GitHub Profile</a>
+                    <div id="nameEmail">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
 
+                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+
+                    <div id="submitContainer">
+                        <input id="submit" type="submit" value="Submit Message">
+                    </div>
+                </form>
         </section>
 
+        <section class="secondSection">
+            <h1 class="sectionHeader">My Online Profiles</h1>
+                <p class="sectionParagraph">You can view my coding projects and self-driven learning on GitHub, and learn more about my academic background in 
+                    computer networks and systems management, as well as my goals as an aspiring professional, on my LinkedIn profile.</p>
 
+                <div id="gridContent">
+                    <div class="card">
+                        <div class="nameLogo">
+                            <h2 class="cardName">Linkedin</h2>
+                                <img class="cardIcon" src="images/icons/whiteIcons/linkedin.svg" loading="lazy" alt="linkedin Icon">
+                                <!--"Icon made by NajmunNahar from www.flaticon.com"/-->
+                        </div>
+                        
+                        <p class="cardText">My LinkedIn highlights my academic background and interests as I work toward starting a career in tech.</p>
+                        <a href="https://www.linkedin.com/in/gavin-roche-gr/" class="cardLink" target="_blank">View Linkedin Profile</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="nameLogo">
+                            <h2 class="cardTitle">GitHub</h2>
+                                <img class="cardIcon" src="images/icons/whiteIcons/github.svg" loading="lazy" alt="github Icon"></a>
+                                <!--"Icon made by Laisa Islam Ani from www.flaticon.com"/-->
+                        </div>
+                        
+                        <p class="cardText">My GitHub showcases personal projects and the skills I’m developing through hands-on practice.</p>
+                        <a href="https://github.com/Gavin-Roche" class="cardLink" target="_blank">View GitHub Profile</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="nameLogo">
+                            <h2 class="cardTitle">Credly</h2>
+                                <img class="cardIcon" src="images/icons/whiteIcons/credly.svg" loading="lazy" alt="Credly Icon"></a>
+                                <!--"Icon made by credly.com from brandfetch.com"/-->
+                        </div>
+
+                        <p class="cardText">My Credly profile features official badges for the certifications I’ve completed in technology and IT.</p>
+                        <a href="https://www.credly.com/users/gavin-roche/badges#credly" class="cardLink" target="_blank">View Credly Profile</a>
+                    </div>
+                </div>
+        </section>
 
         <footer>
-            <div class="contactContainer">
-                <h1>Professional Profiles</h1>
-                    <p>Below is my professional profiles</p>
-
-                    <div class="contactContainerIcons">
-                        <a href="https://www.linkedin.com/in/gavin-roche-gr/"><img src="images/icons/darkMode/linkedin.svg" loading="lazy" alt="linkedin Icon"></a>
-                        <!--"Icon made by NajmunNahar from www.flaticon.com"/-->
-                        <a href="https://github.com/Gavin-Roche"><img src="images/icons/darkMode/github.svg" loading="lazy" alt="github Icon"></a>
-                        <!--"Icon made by Laisa Islam Ani from www.flaticon.com"/-->
-                    </div>
-            </div>
-
             <div class="legal">
                 <p>© 2025 Gavin Roche</p>
                 <a href="#">legal Disclaimer</a>
