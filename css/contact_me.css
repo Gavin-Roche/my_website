@@ -1,0 +1,81 @@
+/* ----------variables---------- */
+
+:root {
+    --padding-form-boxes: 0.7rem;
+}
+
+/* ----------contact form styles---------- */
+
+#nameEmail {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#nameEmail input {
+    width: 100%;
+    padding: var(--padding-form-boxes);
+    margin-bottom: 1rem;
+    border: 1px solid #575757;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    font-size: 1rem;
+}
+
+#message {
+    width: calc(100% - var(--padding-form-boxes) * 2);
+    padding: var(--padding-form-boxes);
+    margin-bottom: 1rem;
+    border: 1px solid #575757;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    font-size: 1rem;
+    height: 15rem;
+    min-height: 7rem;
+    max-height: 30rem;
+    resize: vertical;
+}
+
+#submitContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    padding: var(--padding-form-boxes) 2rem;
+    background-color: #0037FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0070FF;
+}
+
+/* ----------responsive styles---------- */
+
+@media (max-width: 750px) {
+    
+    #nameEmail {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #nameEmail input {
+        width: calc(100% - var(--padding-form-boxes) * 2);
+    }
+}
+
+/* #nameEmail input:focus {
+    outline: 1px solid #0070FF;
+
+    outline: none;
+    border-color: #0070FF;
+
+    or just normal ask for a second opinion
+} */

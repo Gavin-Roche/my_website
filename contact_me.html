@@ -7,10 +7,14 @@
 
         <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
+        <link rel="preload" href="/css/contact_me.css" as="style" type="text/css">
+        <link rel="preload" href="/css/subpages.css" as="style" type="text/css">
         <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/contact_me.css">
+        <link rel="stylesheet" href="/css/subpages.css">
 
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
@@ -48,22 +52,42 @@
 
             <div id="headerText">
                 <h1>Contact Me</h1>
-                <p>I would love to hear from you get in touch</p>
+                    <p>I would love to hear from you get in touch</p>
             </div>
         </header>
 
+        <section class="firstSection">
+                <h1 class="sectionHeader">Contact Form</h1>
+                    <p class="firstSectionParagraph">Feel free to reach out to me using the form below. I’ll do my best to get back to you as soon as
+                        possible via email. Whether you have a question, feedback, or just want to connect, I’d love to hear from you!</p>
+
+                    <form action="https://formsubmit.co/69d8a3aeb90af9cc97123e66e984d8c3" method="POST">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/about_me.html">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div id="nameEmail">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+
+                        <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+
+                        <div id="submitContainer">
+                            <input id="submit" type="submit" value="Submit Message">
+                        </div>
+                    </form>
+        </section>
+
         <footer>
             <div class="contactContainer">
-                <h1>Contact and Social Media</h1>
-                    <p>This is my social media and contact info</p>
+                <h1>Professional Profiles</h1>
+                    <p>Below is my professional profiles</p>
 
-                    <div class="socialMediaIcons">
+                    <div class="contactContainerIcons">
                         <a href="https://www.linkedin.com/in/gavin-roche-gr/"><img src="images/icons/darkMode/linkedin.svg" loading="lazy" alt="linkedin Icon"></a>
                         <!--"Icon made by NajmunNahar from www.flaticon.com"/-->
                         <a href="https://github.com/Gavin-Roche?tab=repositories"><img src="images/icons/darkMode/github.svg" loading="lazy" alt="github Icon"></a>
                         <!--"Icon made by Laisa Islam Ani from www.flaticon.com"/-->
-                        <a href="/contact_me.html"><img src="images/icons/darkMode/email.svg" loading="lazy" alt="Contact form"></a>
-                        <!--"Icon made by Freepik from www.flaticon.com"/-->
                     </div>
             </div>
 
