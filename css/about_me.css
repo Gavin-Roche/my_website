@@ -4,27 +4,7 @@ sup {
     font-size: 0.6em;
 }
 
-/* ----------Education Text styles---------- */
-
-:root {
-    --padding-grade-and-subject: 1.5rem;
-    --mobile-logo-size: 3.5rem;
-}
-
-#educationSection {
-    margin: 3rem 10%;
-}
-
-.educationHeader {
-    font-size: 2.6rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.educationParagraph {
-    color: #9A9A9A;
-    margin-bottom: 1rem;
-}
+/* ----------Text styles---------- */
 
 .yearOfGrades { 
     font-size: 2rem;
@@ -152,7 +132,7 @@ sup {
     border-right: 1px solid #575757;
 }
 
-/* ----------responsive section styles---------- */
+/* ----------responsive styles---------- */
 
 @media (max-width: 1000px) {
 
@@ -179,14 +159,6 @@ sup {
     .accordionHeader.active + .content {
         padding: 2rem 1rem;
     }
-
-    #educationSection {
-        margin: 3rem 1rem;
-    }
-
-    .educationHeader {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 350px) {
@@ -195,15 +167,11 @@ sup {
         font-size: 1.2rem;
     }
 
-    .educationHeader {
-        font-size: 1.6rem;
-    }
-
     .accordionLabels {
         font-size: 0.9rem;
     }
 
-    .educationParagraph, .accordionHeader {
+    .accordionHeader {
         font-size: 0.8rem;
     }
 }

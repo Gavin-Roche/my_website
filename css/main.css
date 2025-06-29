@@ -79,7 +79,7 @@ body.noScroll {
     overflow: hidden;
 }
 
-/* ----------social media section styles---------- */
+/* ----------social media styles---------- */
 
 footer img {
     height: 2rem;
@@ -100,7 +100,7 @@ footer img {
     gap: 2rem;
 }
 
-/* ----------legal section styles---------- */
+/* ----------legal styles---------- */
 
 .legal {
     background-color: #000000;
@@ -113,7 +113,7 @@ footer img {
     color: #0070FF;
 }
 
-/* ----------responsive section styles---------- */
+/* ----------responsive styles---------- */
 
 @media (max-width: 1000px) {
 

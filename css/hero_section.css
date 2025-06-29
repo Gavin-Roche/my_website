@@ -55,7 +55,7 @@ header::before {
     color: #0070FF;
 }
 
-/* ----------responsive section styles---------- */
+/* ----------responsive styles---------- */
 
 @media (max-width: 1000px) {
     #headerText {
