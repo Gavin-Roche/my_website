@@ -1,7 +1,7 @@
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
 const navList = document.querySelector('nav ul');
 const nav = document.querySelector('nav');
-const body = document.body
+const body = document.body;
 
 function closeNavBar()
 {
