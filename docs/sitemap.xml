@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home page -->
+  <url>
+    <loc>https://gavinroche.ie</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Me page -->
+  <url>
+    <loc>https://gavinroche.ie/about_me.html</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Legal page -->
+  <url>
+    <loc>https://gavinroche.ie/legal.html</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Projects page -->
+  <url>
+    <loc>https://gavinroche.ie/projects.html</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+    <!-- Thank You page -->
+  <url>
+    <loc>https://gavinroche.ie/thank_you.html</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+    <!-- Contact Me page -->
+    <url>
+        <loc>https://gavinroche.ie/contact_me.html</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>

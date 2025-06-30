@@ -1,0 +1,8 @@
+# robots.txt for https://gavinroche.ie
+
+User-agent: *
+# allow everything
+Allow: /
+
+# point search engines to your sitemap
+Sitemap: https://gavinroche.ie/sitemap.xml
