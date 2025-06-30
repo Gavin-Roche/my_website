@@ -1,0 +1,22 @@
+.heroImage {
+    width: 100%;
+}
+
+.cardIcon {
+    margin: auto;
+    width: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.imageLink {
+    color: #2987FF;
+}
+
+/* ----------responsive styles---------- */
+
+@media (max-width: 750px) {
+    
+    .cardIcon {
+        width: 3rem;
+    }
+}
