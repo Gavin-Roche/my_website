@@ -8,7 +8,7 @@
   <!-- Home page -->
   <url>
     <loc>https://gavinroche.ie</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-07-1</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -16,7 +16,7 @@
   <!-- About Me page -->
   <url>
     <loc>https://gavinroche.ie/about_me.html</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-07-1</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -24,7 +24,7 @@
   <!-- Legal page -->
   <url>
     <loc>https://gavinroche.ie/legal.html</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-07-1</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -32,7 +32,7 @@
   <!-- Projects page -->
   <url>
     <loc>https://gavinroche.ie/projects.html</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-07-1</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,7 +40,7 @@
     <!-- Thank You page -->
   <url>
     <loc>https://gavinroche.ie/thank_you.html</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-07-1</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -48,7 +48,7 @@
     <!-- Contact Me page -->
     <url>
         <loc>https://gavinroche.ie/contact_me.html</loc>
-        <lastmod>2025-06-30</lastmod>
+        <lastmod>2025-07-1</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>

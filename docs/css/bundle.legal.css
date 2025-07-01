@@ -1,1 +1,1 @@
-.heroImage{width:100%}.cardIcon{margin:auto auto .5rem;height:5rem}.imageLink{color:#2987ff}@media (max-width:750px){.cardIcon{height:3rem}}
+.heroImage{width:100%;height:auto}.cardIcon{margin:auto auto .5rem;height:5rem;width:5rem}.credlyIcon{width:10rem}.imageLink{color:#2987ff}@media (max-width:750px){.cardIcon{height:3rem;width:3rem}.credlyIcon{width:6rem}}

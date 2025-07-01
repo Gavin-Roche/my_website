@@ -1,11 +1,17 @@
 .heroImage {
     width: 100%;
+    height: auto;
 }
 
 .cardIcon {
     margin: auto;
     height: 5rem;
+    width: 5rem;
     margin-bottom: 0.5rem;
+}
+
+.credlyIcon {
+    width: 10rem;
 }
 
 .imageLink {
@@ -18,5 +24,10 @@
     
     .cardIcon {
         height: 3rem;
+        width: 3rem;
+    }
+    
+    .credlyIcon {
+        width: 6rem;
     }
 }
