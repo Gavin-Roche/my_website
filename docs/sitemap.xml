@@ -37,14 +37,6 @@
     <priority>1.0</priority>
   </url>
 
-    <!-- Thank You page -->
-  <url>
-    <loc>https://gavinroche.ie/thank_you.html</loc>
-    <lastmod>2025-07-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
     <!-- Contact Me page -->
     <url>
         <loc>https://gavinroche.ie/contact_me.html</loc>
