@@ -3,34 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Explore my latest projects, including GitHub repositories, code samples, and development work showcasing my skills and creativity.">
+        <meta name="description" content="Explore Gavin Roche’s latest projects, including GitHub repositories, code samples, and development work showcasing his skills and creativity.">
+
+        <style>
+            :root {
+                --header-height: 50vh;
+                --headerText-font-size: 1.8rem;
+                --headerText-font-size-1000px: 1.4rem;
+                --headerText-top: 50%;
+                --bg-filter-color: #2a2e2555;
+                --bg-image: url(/images/subpages_hero/subpage_hero.webp);
+                --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);
+            }
+
+            header {
+                width: 100%;
+                height: var(--header-height);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                background-image: var(--bg-image), var(--bg-image-smaller);
+            }
+        </style>
 
         <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
         <link rel="preload" href="/css/grid.css" as="style" type="text/css">
         <link rel="preload" href="/css/subpages.css" as="style" type="text/css">
-        <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/grid.css">
         <link rel="stylesheet" href="/css/subpages.css">
 
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   
-        <script src="javascript/main.js" defer></script>
+        <title>Gavin Roche | Projects</title>
 
-        <title>Projects</title>
+        <script src="javascript/main.js" defer></script>
     </head>
     
-    <body style="
-    --header-height: 50vh;
-    --headerText-font-size: 1.8rem;
-    --headerText-font-size-1000px: 1.4rem;
-    --bg-filter-color: #222c3780;
-    --bg-image: url(/images/subpages_hero/subpage_hero.webp);
-    --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);">
+    <body>
         <header>
             <nav>
                 <a href="/" class="logo">GR</a>
@@ -69,7 +84,7 @@
 
                     <div class="card">
                         <h3 class="cardTitle">This Website</h3>
-                            <p class="cardText">A personal website I built from scratch no frameworks, no Bootstrap, just vanilla HTML, CSS, and JavaScript.</p>
+                            <p class="cardText">A personal website I built from scratch: no frameworks, no Bootstrap, just vanilla HTML, CSS, and JavaScript.</p>
                             <a href="https://github.com/Gavin-Roche/my_website" class="cardLink" target="_blank">View on GitHub</a>
                     </div>
 
@@ -80,14 +95,14 @@
                     </div>
 
                     <div class="card">
-                        <h3 class="cardTitle">Disk Stats Visualizer</h3>
-                            <p class="cardText">A tool that cleans and visualizes HDD & SSD storage capacity data from a CSV file.</p>
+                        <h3 class="cardTitle">Disk Stats Visualiser</h3>
+                            <p class="cardText">A tool that cleans and visualises HDD & SSD storage capacity data from a CSV file.</p>
                             <a href="https://github.com/Gavin-Roche/disk_stats_visualizer" class="cardLink" target="_blank">View on GitHub</a>
                     </div>
 
                     <div class="card">
-                        <h3 class="cardTitle">Premier League Analyzer</h3>
-                            <p class="cardText">Analyzing match stats (red cards, goals, yellow cards) and visualizing data with Plotly.</p>
+                        <h3 class="cardTitle">Premier League Analyzser</h3>
+                            <p class="cardText">Analysing match stats (red cards, goals, yellow cards) and visualising data with Plotly.</p>
                             <a href="https://github.com/Gavin-Roche/premier_league_statistics_analyzer" class="cardLink" target="_blank">View on GitHub</a>
                     </div>
 
@@ -149,7 +164,7 @@
 
             <div class="legal">
                 <p>© 2025 Gavin Roche</p>
-                <a href="legal.html">legal Disclaimer</a>
+                <a href="legal.html">Legal Disclaimers</a>
             </div>
         </footer>
     </body>

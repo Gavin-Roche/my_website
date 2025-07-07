@@ -3,21 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Welcome to Gavin Roche's personal website, where I showcase my projects, skills, and experience in computer networks and systems management.">
+        <meta name="description" content="Gavin Roche is a student specializing in Computer Networks and Systems Management, showcasing his skills, experience, and professional growth.">
+
+        <style>
+            :root {
+                --header-height: 100vh;
+                --headerText-font-size: 2rem;
+                --headerText-font-size-1000px: 1.5rem;
+                --headerText-top: 50%;
+                --bg-filter-color: #222c3760;
+                --bg-image: url(/images/hero/hero.webp);
+                --bg-image-smaller: url(/images/hero/hero_smaller.webp);
+            }
+
+            header {
+                width: 100%;
+                height: var(--header-height);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                background-image: var(--bg-image), var(--bg-image-smaller);
+            }
+        </style>
 
         <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
-        <link rel="preload" href="/images/hero/hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
 
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   
-        <script src="javascript/main.js" defer></script>
+        <title>Gavin Roche | Home</title>
 
-        <title>Home</title>
+        <script src="javascript/main.js" defer></script>
     </head>
     
     <body>
@@ -40,8 +61,8 @@
             </nav>
 
             <div id="headerText">
-                <h1>Hi I'm&nbsp;<span>Gavin</span></h1>
-                    <p>I am a computer networks and systems management student in TUS Midwest</p>
+                <h1>Gavin Roche</h1>
+                    <p>Computer Networks and Systems Management student</p>
             </div>
         </header>
 
@@ -59,7 +80,7 @@
 
             <div class="legal">
                 <p>© 2025 Gavin Roche</p>
-                <a href="legal.html">legal Disclaimer</a>
+                <a href="legal.html">Legal Disclaimers</a>
             </div>
         </footer>
     </body>

@@ -3,35 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn about me, my academic achievements, skills, and background. Discover my journey and the experiences that shape my work.">
+        <meta name="description" content="Learn about Gavin Roche, his academic achievements, skills, and background. Discover the journey and experiences that shape his work.">
+
+        <style>
+            :root {
+                --header-height: 50vh;
+                --headerText-font-size: 1.8rem;
+                --headerText-font-size-1000px: 1.4rem;
+                --headerText-top: 50%;
+                --bg-filter-color: #2a2e2555;
+                --bg-image: url(/images/subpages_hero/subpage_hero.webp);
+                --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);
+            }
+
+            header {
+                width: 100%;
+                height: var(--header-height);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                background-image: var(--bg-image), var(--bg-image-smaller);
+            }
+        </style>
 
         <link rel="preload" href="/css/hero_section.css" as="style" type="text/css">
         <link rel="preload" href="/css/main.css" as="style" type="text/css">
         <link rel="preload" href="/css/about_me.css" as="style" type="text/css">
         <link rel="preload" href="/css/subpages.css" as="style" type="text/css">
-        <link rel="preload" href="/images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="/css/hero_section.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/about_me.css">
         <link rel="stylesheet" href="/css/subpages.css">
 
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   
+        <title>Gavin Roche | About Me</title>
+
         <script src="javascript/main.js" defer></script>
         <script src="javascript/about_me.js" defer></script>
-
-        <title>About Me</title>
     </head>
     
-    <body style="
-    --header-height: 50vh;
-    --headerText-font-size: 1.8rem;
-    --headerText-font-size-1000px: 1.4rem;
-    --bg-filter-color: #222c3780;
-    --bg-image: url(/images/subpages_hero/subpage_hero.webp);
-    --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);">
+    <body>
         <header>
             <nav>
                 <a href="/" class="logo">GR</a>
@@ -60,7 +75,7 @@
             <h2 class="sectionHeader">College Education Overview</h2>
                 <p class="sectionParagraph">​I am currently studying Computer Networks and Systems Management, which has now been
                 renamed Computer Networks and Cyber Security, at TUS Midwest. I am a second-year student. Below is a list
-                of all the subjects I am studying, along with a brief description of each and my grades.</p>
+                of all the subjects I am studying, along with a brief description of each, and my grades.</p>
 
                 <ul class="tabTitle">
                     <li class="tabLinks active">1<sup>st</sup> Year</li>
@@ -242,7 +257,7 @@
 
             <div class="legal">
                 <p>© 2025 Gavin Roche</p>
-                <a href="legal.html">legal Disclaimer</a>
+                <a href="legal.html">Legal Disclaimers</a>
             </div>
         </footer>
     </body>

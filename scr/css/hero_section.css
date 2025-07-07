@@ -1,25 +1,4 @@
-/* ----------variables---------- */
-
-:root {
-    --header-height: 100vh;
-    --headerText-font-size: 2rem;
-    --headerText-font-size-1000px: 1.5rem;
-    --bg-filter-color: #222c37b3;
-    --bg-image: url(/images/hero/hero.webp);
-    --bg-image-smaller: url(/images/hero/hero_smaller.webp);
-}
-
-/* ----------hero image styles---------- */
-header {
-    width: 100%;
-    height: var(--header-height);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-image: var(--bg-image), var(--bg-image-smaller);
-}
-
-/* Puts a filter above the hero image */
+/* ----------filter above hero image---------- */
 header::before {
     content: '';
     position: absolute;
@@ -37,7 +16,7 @@ header::before {
 
 #headerText {
     position: absolute;
-    top: 50%;
+    top: var(--headerText-top);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -45,10 +24,6 @@ header::before {
     color: #FFFFFF;
     z-index: 2;
     width: 90%;
-}
-
-#headerText span {
-    color: #0070FF;
 }
 
 /* ----------responsive styles---------- */

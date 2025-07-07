@@ -1,4 +1,3 @@
-/* jshint esversion: 6 */
 const secondYearSubjects = [
 { name: "Statistical Data Analysis", grade: "97%", description: "This module aims to further develop mathematical ability and provide the basic statistical and probability concepts required for information technology, along with the knowledge needed for data analysis." },
 { name: "Intro to Object Oriented Programming", grade: "95%", description: "This module introduces the principles of object-oriented programming in C++, focusing on the creation and manipulation of classes and objects." },

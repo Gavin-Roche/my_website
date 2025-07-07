@@ -3,30 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Attribution and copyright information for content used on this website, ensuring proper credit is given where due.">
+        <meta name="description" content="Attribution and copyright information for content used on Gavin Roche’s website, ensuring proper credit is given">
+
+        <style>
+            :root {
+                --header-height: 50vh;
+                --headerText-font-size: 1.8rem;
+                --headerText-font-size-1000px: 1.4rem;
+                --headerText-top: 50%;
+                --bg-filter-color: #2a2e2555;
+                --bg-image: url(/images/subpages_hero/subpage_hero.webp);
+                --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);
+            }
+
+            header {
+                width: 100%;
+                height: var(--header-height);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                background-image: var(--bg-image), var(--bg-image-smaller);
+            }
+        </style>
 
         <link rel="preload" href="css/bundle.common.css" as="style" type="text/css">
         <link rel="preload" href="css/bundle.legal.css" as="style" type="text/css">
-        <link rel="preload" href="images/subpages_hero/subpage_hero_smaller.webp" as="image">
 
         <link rel="stylesheet" href="css/bundle.common.css">
         <link rel="stylesheet" href="css/bundle.legal.css">
 
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon/favicon-48x48.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   
-        <script src="javascript/main.js" defer></script>
+        <title>Gavin Roche | Legal</title>
 
-        <title>Legal</title>
+        <script src="javascript/main.js" defer></script>
+        <script data-goatcounter="https://gavinroche.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     </head>
     
-    <body style="
-    --header-height: 50vh;
-    --headerText-font-size: 1.8rem;
-    --headerText-font-size-1000px: 1.4rem;
-    --bg-filter-color: #222c3780;
-    --bg-image: url(/images/subpages_hero/subpage_hero.webp);
-    --bg-image-smaller: url(/images/subpages_hero/subpage_hero_smaller.webp);">
+    <body>
         <header>
             <nav>
                 <a href="/" class="logo">GR</a>
@@ -88,7 +104,7 @@
                 <p class="sectionParagraph">Title: "THE SHANNON RIVER [AS IT PASSES THROUGH THE CITY OF LIMERICK]-140736" by William Murphy, © 2018.
                     Licensed under Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0).
                     Available at: <a href="https://creativecommons.org/licenses/by-sa/2.0/" class="imageLink" target="_blank">creativecommons.org</a> Source: <a href="https://www.flickr.com/photos/infomatique/42430992742" class="imageLink" target="_blank">flickr.com</a>
-                    Modified: Images has been formatted and compressed</p>
+                    Modified: Image has been formatted, cropped, and compressed.</p>
         </section>
 
         <footer>
@@ -105,7 +121,7 @@
 
             <div class="legal">
                 <p>© 2025 Gavin Roche</p>
-                <a href="legal.html">legal Disclaimer</a>
+                <a href="legal.html">Legal Disclaimers</a>
             </div>
         </footer>
     </body>
